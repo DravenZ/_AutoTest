@@ -1,0 +1,37 @@
+接口路径/api/sso/login:
+    请求基本信息baseInfo:
+        编写人员author: TaoLi
+        编写\更新时间time: 20180931
+        打印日志信息logInfo: Warn
+        直接执行directExecution: False
+        生成文件generatePython: True
+        请求方法requestMethod: POST
+        请求头信息requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        服务地址serverAddress: https://www.jianshu.com
+        数据库地址databaseAddress: 
+            - 地址192.168.4.89:30
+            - 地址192.168.6.89:30   
+    接口参数interfaceParameters: 
+        -
+            #testCase   \  testStep
+            参数mobile: 15881109258
+            参数code: 7126b
+        -
+            #testCase   \  testStep
+            参数mobile: 15881109258
+            参数passwd: 15881109257
+            参数code: 7126b
+      
+    断言interfaceAsserts: 
+        - 
+            断言RESPONSE([key][2][0]): OK
+            断言RESPONSE([key][2][0]): OK
+        -
+            断言REQUEST(mobile): 
+                - 断言RESPONSE([key][2][0])
+                - 断言SQUERY(select id from user where name = REQUEST(name))
+            断言SQUERY(select id from user where name = REQUEST(name)): RESPONSE([key][2][0])
+            
+            
+            
+            

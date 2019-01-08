@@ -1,0 +1,197 @@
+/api/sso/login:
+    #接口请求基础信息
+    baseInfo:
+        #接口作者，非必填
+        author: TaoLi
+        #接口用例编写时间，非必填
+        time: 20180931
+        #接口要去的打印日志级别，非必填，默认为debug
+        logInfo: Warn、
+        #是否执行接口测试，非必填，默认True
+        directExecution: False
+        #是否按接口请求和响应生成python文件，非必填，默认False
+        generatePython: True
+        #接口请求方式，必填信息，默认POST，需要支持GET
+        requestMethod: POST
+        #接口请求header,非必填，需要有默认值
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        #接口请求服务器地址，必填，需要支持https协议
+        serverAddress: https://www.jianshu.com
+        #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+        dataBase:
+          host: 132.232.47.119
+          user: ms
+          password: MiaoShu@2018
+          database: ""
+          port: 3306
+    #接口请求参数列表
+    interfaceParameters:
+        -
+            #FAKER 数据
+            mobile: 15881109258
+            mobile1: FAKER("mobile")
+            #IMAGE上传图片
+            file: IMAGE(./demo.png)
+            code: &S3 543345
+            #RECORD 将某个值存储到全局变量中，请求中不需要携带该参数
+            RECORD(code): *S3
+            #READ 获取公共参数值
+            key: READ(tk)
+        -
+            #留空传入
+            mobile:
+            #LREQUEST 获取上次请求中的内容
+            passwd: &S4 LREQUEST(code)
+            #LRESPONSE 获取上次响应中的内容
+            code: LRESPONSE(content.datas.name)
+            #SQUERY 从数据库中获取内容作为请求值
+            code2: SQUERY(select id from user where name = test)
+        -
+            #留空请求
+    #接口断言参数列表
+    interfaceAsserts:
+        -
+            #RECORD 将某个值存储到全局变量中，断言中不需要做断言
+            RECORD(code): RESPONSE([content.datas.__iterator__.orders)
+            #READ 获取公共参数值
+            key: READ(code)
+            key2: SQUERY(select status from user where name = READ(code))
+            #LREQUEST 获取上次请求中的内容
+            RESPONSE(content.datas.2.orders): LREQUEST(code)
+            #REQUEST 获取当次请求中的内容
+            RESPONSE(content.datas.orders): REQUEST(passwd)
+        -
+            #LRESPONSE 获取上次响应中的内容
+            RESPONSE(content.datas.0.orders): "yes"
+            #RESPONSE 获取当次响应中的内容,参数为取值路径，迭代使用方式用关键字__iterator__进行替代
+            RESPONSE(content.datas.__iterator__.orders): "yes"
+            #SQUERY 从数据库中获取内容作为请求值
+            SQUERY(select name from user where name = REQUEST(passwd)): RESPONSE(content)
+            #多层嵌套断言
+            READ(code):
+              - RESPONSE([key][2][0])
+              - SQUERY(select id from user where name = REQUEST(name))
+              - RESPONSE(content.datas.1.orders)
+        -
+            #留空断言
+
+#多个接口请求
+/api/sso/login2:
+    #接口请求基础信息
+    baseInfo:
+        #接口作者，非必填
+        author: TaoLi
+        #接口用例编写时间，非必填
+        time: 20180931
+        #接口要去的打印日志级别，非必填，默认为debug
+        logInfo: Warn、
+        #是否执行接口测试，非必填，默认True
+        directExecution: False
+        #是否按接口请求和响应生成python文件，非必填，默认False
+        generatePython: True
+        #接口请求方式，必填信息，默认POST，需要支持GET
+        requestMethod: POST
+        #接口请求header,非必填，需要有默认值
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        #接口请求服务器地址，必填，需要支持https协议
+        serverAddress: https://www.jiadataBase:nshu.com
+        #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+
+          host: 132.232.47.119
+          user: ms
+          password: MiaoShu@2018
+          database: ""
+          port: 3306
+    #接口请求参数列表
+    interfaceParameters:
+        -
+            #FAKER 数据
+            mobile: 15881109258
+            mobile1: FAKER("mobile")
+            #IMAGE上传图片
+            file: IMAGE(./demo.png)
+            code: &S1 543345
+            #RECORD 将某个值存储到全局变量中，请求中不需要携带该参数
+            RECORD(code): *S1
+            #READ 获取公共参数值
+            key: READ(tk)
+        -
+            #留空传入
+            mobile:
+            #LREQUEST 获取上次请求中的内容
+            passwd: &S2 LREQUEST(code)
+            #LRESPONSE 获取上次响应中的内容
+            code: LRESPONSE(content.datas.name)
+            #SQUERY 从数据库中获取内容作为请求值
+            code2: SQUERY(select id from user where name = REQUEST(passwd))
+        -
+            #留空请求
+    #接口断言参数列表
+    interfaceAsserts:
+        -
+            #RECORD 将某个值存储到全局变量中，断言中不需要做断言
+            RECORD(code): RESPONSE([content.datas.__iterator__.orders)
+            #READ 获取公共参数值
+            key: READ(code)
+            key2: SQUERY(select status from user where name = READ(code))
+            #LREQUEST 获取上次请求中的内容
+            RESPONSE(content.datas.2.orders): LREQUEST(code)
+            #REQUEST 获取当次请求中的内容
+            RESPONSE(content.datas.orders): REQUEST(passwd)
+        -
+            #LRESPONSE 获取上次响应中的内容
+            RESPONSE(content.datas.0.orders): "yes"
+            #RESPONSE 获取当次响应中的内容,参数为取值路径，迭代使用方式用关键字__iterator__进行替代
+            RESPONSE(content.datas.__iterator__.orders): "yes"
+            #SQUERY 从数据库中获取内容作为请求值
+            SQUERY(select id from user where name = REQUEST(passwd)): RESPONSE(content)
+            #多层嵌套断言
+            READ(code):
+              - RESPONSE([key][2][0])
+              - SQUERY(select id from user where name = REQUEST(name))
+              - RESPONSE(content.datas.1.orders)
+        -
+            #留空断言
+
+#多个接口请求
+/common/product/upload-img:
+    #接口请求基础信息
+    baseInfo:
+        #接口作者，非必填
+        author: zpf
+        #接口用例编写时间，非必填
+        time: 20180931
+        #接口要去的打印日志级别，非必填，默认为debug
+        logInfo: Warn
+        #是否执行接口测试，非必填，默认True
+        directExecution:
+        #是否按接口请求和响应生成python文件，非必填，默认False
+        generatePython: True
+        #接口请求方式，必填信息，默认POST，需要支持GET
+        requestMethod: POSTFILE
+        #接口请求header,非必填，需要有默认值
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        #接口请求服务器地址，必填，需要支持https协议
+        serverAddress: http://qa.ms.product.sjnc.com
+        #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+        dataBase:
+          host: 132.232.47.119
+          user: ms
+          password: MiaoShu@2018
+          database: ""
+
+    #接口请求参数列表
+    interfaceParameters:
+        -
+            #FAKER 数据
+            file: ./../../picture/test.jpg
+
+        -
+            #留空传入
+            file: ./../../picture/test.jpg
+    interfaceAsserts:
+        -
+
+        -
+
+            #留空断言

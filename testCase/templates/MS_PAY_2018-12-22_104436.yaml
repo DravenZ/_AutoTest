@@ -1,0 +1,555 @@
+
+/admin/situation/info:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          startTime:
+          endTime:
+    interfaceAsserts:
+        -
+
+/admin/situation/service-order-quantity:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          startTime:
+          endTime:
+    interfaceAsserts:
+        -
+
+/admin/situation/service-tansactions:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          startTime:
+          endTime:
+    interfaceAsserts:
+        -
+
+/api/account-fund/bind-third:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          accountId:
+          pfCode:
+          openId:
+          appType:
+    interfaceAsserts:
+        -
+
+/api/account-fund/create:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          accountId:
+          pfCode:
+          openId:
+          appType:
+    interfaceAsserts:
+        -
+
+/api/account-fund/freeze:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          accountId:
+          pfCode:
+    interfaceAsserts:
+        -
+
+/api/account-fund/query-balance:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          accountId:
+          pfCode:
+    interfaceAsserts:
+        -
+
+/api/account-fund/unfreeze:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          accountId:
+          pfCode:
+    interfaceAsserts:
+        -
+
+/api/callback/query-pay:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          channelId:
+          channelSubmitId:
+    interfaceAsserts:
+        -
+
+/api/callback/query-refund:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          channelId:
+          channelSubmitId:
+    interfaceAsserts:
+        -
+
+/api/callback/query-withdraw:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          channelId:
+          channelSubmitId:
+    interfaceAsserts:
+        -
+
+/api/callback/withdraw:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          pfCode:
+          name:
+          srcAccountId:
+          srcAccountName:
+          desAccountNo:
+          desAccountName:
+          amount:
+          outTradeNo:
+          notifyUrl:
+          channelId:
+    interfaceAsserts:
+        -
+
+/api/channel-bill/query-mspay-bill:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeDateStart:
+          tradeDateEnd:
+          channelId:
+          pageSize:
+          currentPage:
+    interfaceAsserts:
+        -
+
+/api/channel-bill/query-thrid-party-bill:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeDateStart:
+          tradeDateEnd:
+          channelId:
+    interfaceAsserts:
+        -
+
+/api/trade/close:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeNo:
+          outTradeNo:
+    interfaceAsserts:
+        -
+
+/api/trade/confirm:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeNos:
+          accountId:
+          remark:
+    interfaceAsserts:
+        -
+
+/api/trade/create:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          pfCode:
+          name:
+          srcAccountId:
+          srcAccountName:
+          desAccountNo:
+          desAccountName:
+          amount:
+          outTradeNo:
+          notifyUrl:
+    interfaceAsserts:
+        -
+
+/api/trade/query:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          pageSize:
+          pageNum:
+          tradeNo:
+          outTradeNo:
+    interfaceAsserts:
+        -
+
+/api/trade/refund:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeNo:
+          amount:
+          remark:
+          accountId:
+    interfaceAsserts:
+        -
+
+/mobile/account/sales-amount:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/account/sales-bill:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          pageSize:
+          pageNum:
+    interfaceAsserts:
+        -
+
+/mobile/cashier/index:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeNos:
+    interfaceAsserts:
+        -
+
+/mobile/weipay/pay:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          tradeNos:
+          channelId:
+          channelAmount:
+    interfaceAsserts:
+        -

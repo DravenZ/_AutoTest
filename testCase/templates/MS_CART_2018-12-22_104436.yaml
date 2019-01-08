@@ -1,0 +1,207 @@
+
+/api/cart/list-by-ids:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          cartIds:
+    interfaceAsserts:
+        -
+
+/api/freight/calc:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          pcodes:
+          amounts:
+          addressId:
+          buyerId:
+          userType:
+    interfaceAsserts:
+        -
+
+/mobile/cart/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          pcode:
+          amount:
+    interfaceAsserts:
+        -
+
+/mobile/cart/balance:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          cartIds:
+          addressId:
+    interfaceAsserts:
+        -
+
+/mobile/cart/batch-delete:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          cartIds:
+    interfaceAsserts:
+        -
+
+/mobile/cart/delete:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          cartId:
+    interfaceAsserts:
+        -
+
+/mobile/cart/editAmount:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          cartId:
+          amount:
+    interfaceAsserts:
+        -
+
+/mobile/cart/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          type:
+    interfaceAsserts:
+        -
+
+/mobile/cart/purchase:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          pcode:
+          amount:
+          addressId:
+    interfaceAsserts:
+        -

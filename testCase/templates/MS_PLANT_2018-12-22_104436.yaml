@@ -1,0 +1,1025 @@
+
+/admin/plant-case/create:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          caseTopic:
+          symptom:
+          treatmentMethod:
+          userId:
+    interfaceAsserts:
+        -
+
+/admin/plant-case/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantCaseId:
+    interfaceAsserts:
+        -
+
+/admin/plant-case/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          caseNo:
+          caseKeyword:
+          doctorUserId:
+          mobile:
+          pageSize:
+          pageNum:
+          id:
+          createTime:
+          editTime:
+          isDelete:
+          orderFieldType:
+          startIndex:
+          orderField:
+          queryData:
+    interfaceAsserts:
+        -
+
+/callback/plant/watering:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          expireDate:
+    interfaceAsserts:
+        -
+
+/mobile/home/msTalk:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/member-nick/edit:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          nickUserId:
+          nick:
+    interfaceAsserts:
+        -
+
+/mobile/member/accept:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          invitorId:
+          acceptorMobile:
+          verifyCode:
+    interfaceAsserts:
+        -
+
+/mobile/member/invite:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          acceptorMobile:
+          acceptorNick:
+    interfaceAsserts:
+        -
+
+/mobile/member/isInviteBefore:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/member/member-info-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/member/member-info-order-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/member/member-weather:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/message-board/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          content:
+          messageBoardImgs:
+          weather:
+          createTime:
+          uuid:
+    interfaceAsserts:
+        -
+
+/mobile/message-board/listPage:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          createTimeEnd:
+          pageSize:
+          pageNum:
+    interfaceAsserts:
+        -
+
+/mobile/message-board/listPage4Invite:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          pageSize:
+          pageNum:
+          userId:
+    interfaceAsserts:
+        -
+
+/mobile/mobile-record/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          mobileJson:
+    interfaceAsserts:
+        -
+
+/mobile/mobile-record/exist:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/plant-case/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantCaseId:
+    interfaceAsserts:
+        -
+
+/mobile/plant/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          roomId:
+          plantWikiId:
+          plantName:
+          waterCycleTime:
+          adCode:
+          imgUrl:
+    interfaceAsserts:
+        -
+
+/mobile/plant/album-add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantId:
+          imgUrl:
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/plant/album-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantId:
+          pageSize:
+          pageNum:
+    interfaceAsserts:
+        -
+
+/mobile/plant/album-upload:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          file:
+    interfaceAsserts:
+        -
+
+/mobile/plant/delete:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantId:
+    interfaceAsserts:
+        -
+
+/mobile/plant/list-by-room:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          roomId:
+    interfaceAsserts:
+        -
+
+/mobile/plant/list-for-invite:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          userId:
+    interfaceAsserts:
+        -
+
+/mobile/plant/manage-fertilize:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantIds:
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/plant/manage-pick:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantIds:
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/plant/manage-record-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantId:
+          pageSize:
+          pageNum:
+    interfaceAsserts:
+        -
+
+/mobile/plant/manage-trim:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantIds:
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/plant/manage-watering:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantIds:
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/plant/record-added:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/plant/transport:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          plantId:
+          toRoomId:
+    interfaceAsserts:
+        -
+
+/mobile/room/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          roomType:
+          roomUserId:
+    interfaceAsserts:
+        -
+
+/mobile/room/change-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/room/del:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          roomId:
+    interfaceAsserts:
+        -
+
+/mobile/room/group-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/room/homepage-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/room/show-status:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          roomId:
+          showStatus:
+    interfaceAsserts:
+        -
+
+/mobile/room/type-order:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          roomTypeOrderJson:
+    interfaceAsserts:
+        -
+
+/mobile/visit-record/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          adCode:
+    interfaceAsserts:
+        -
+
+/mobile/visit-record/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/visit-record/list4Invite:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          userId:
+    interfaceAsserts:
+        -
+
+/mobile/wx/getAccessToken:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/wx/refreshAccessToken:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/wx/signature:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.plant.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-plant
+    interfaceParameters:
+        -
+          url:
+    interfaceAsserts:
+        -

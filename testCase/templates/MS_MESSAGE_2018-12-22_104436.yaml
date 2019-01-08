@@ -1,0 +1,895 @@
+
+/admin/im-auth/service-get/accid:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          serveType:
+          userId:
+    interfaceAsserts:
+        -
+
+/api/im/get/im-account:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          appId:
+          uid:
+          accType:
+          serveType:
+          roleType:
+    interfaceAsserts:
+        -
+
+/api/im/get/service-accid:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          appId:
+          fromUid:
+          fromUserType:
+          toUid:
+          toUserType:
+          serveType:
+    interfaceAsserts:
+        -
+
+/api/message-center/del:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          msgId:
+          serveType:
+    interfaceAsserts:
+        -
+
+/api/message-center/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          serveType:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/api/message-center/page-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          serveType:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/api/message-center/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          msgId:
+          serveType:
+    interfaceAsserts:
+        -
+
+/api/message-center/unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          msgId:
+          serveType:
+    interfaceAsserts:
+        -
+
+/api/push-message/get-push-alias:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          userType:
+          serveType:
+          roleId:
+          deviceId:
+    interfaceAsserts:
+        -
+
+/api/shortMessage/send-message-count:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          mobileRegion:
+          mobile:
+          businessType:
+          serveType:
+    interfaceAsserts:
+        -
+
+/api/shortMessage/validate-verify-code:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          mobileRegion:
+          mobile:
+          verifyCode:
+          businessType:
+          serveType:
+    interfaceAsserts:
+        -
+
+/mobile/buyer/message-center/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+          userId:
+          serveType:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/mobile/buyer/message-center/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+    interfaceAsserts:
+        -
+
+/mobile/buyer/message-center/unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+    interfaceAsserts:
+        -
+
+/mobile/buyer/sub-message/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/buyer/sub-message/unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/im-auth/promoter/get/seller-agency-accid:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          serveType:
+    interfaceAsserts:
+        -
+
+/mobile/message-center/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/message-center/unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/promoter/push-message/count-unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+    interfaceAsserts:
+        -
+
+/mobile/promoter/push-message/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+          pn:
+          ps:
+          userId:
+    interfaceAsserts:
+        -
+
+/mobile/promoter/push-message/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          msgId:
+    interfaceAsserts:
+        -
+
+/mobile/push-auth/get/alias/buyer:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/push-auth/get/alias/buyer-and-seller:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/push-auth/get/alias/promoter:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/push-auth/get/alias/seller-agency:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/seller-agency/push-message/count-unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/seller-agency/push-message/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          id:
+    interfaceAsserts:
+        -
+
+/mobile/seller-agency/push-message/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          pn:
+          ps:
+          userId:
+    interfaceAsserts:
+        -
+
+/mobile/seller-agency/push-message/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          msgId:
+    interfaceAsserts:
+        -
+
+/tx/get/user-info:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          accid:
+    interfaceAsserts:
+        -
+
+/web/buyer/message-center/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+          userId:
+          serveType:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/web/buyer/message-center/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+    interfaceAsserts:
+        -
+
+/web/buyer/message-center/unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          category:
+    interfaceAsserts:
+        -
+
+/web/im-auth/buyer-and-seller/allot/exclusive-service-accid:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          serveType:
+    interfaceAsserts:
+        -
+
+/web/im-auth/buyer-and-seller/get/exclusive-service-accid:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          serveType:
+    interfaceAsserts:
+        -
+
+/web/im-auth/buyer-and-seller/get/service-accid:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+          userId:
+          serveType:
+    interfaceAsserts:
+        -
+
+/web/message-center/read:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/web/message-center/unread:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.message.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-message
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -

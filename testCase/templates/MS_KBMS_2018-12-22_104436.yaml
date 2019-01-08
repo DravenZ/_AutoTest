@@ -1,0 +1,664 @@
+
+/admin/config/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          code:
+          key:
+          value:
+          description:
+          isDelete:
+          status:
+    interfaceAsserts:
+        -
+
+/admin/config/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+    interfaceAsserts:
+        -
+
+/admin/config/edit:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+          code:
+          key:
+          value:
+          description:
+          status:
+    interfaceAsserts:
+        -
+
+/admin/config/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          code:
+          description:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/admin/config/list-config-by-code:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          code:
+    interfaceAsserts:
+        -
+
+/admin/plant-disease/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+    interfaceAsserts:
+        -
+
+/admin/plant-disease/import:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          file:
+    interfaceAsserts:
+        -
+
+/admin/plant-disease/list-hot:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/admin/plant-disease/name-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          search:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/admin/plant/import:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          file:
+    interfaceAsserts:
+        -
+
+/admin/resource-activity/item/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          type:
+          sort:
+          imgUrl:
+          width:
+          height:
+          status:
+          jumpUrl:
+          startTimeStr:
+          endTimeStr:
+          remark:
+    interfaceAsserts:
+        -
+
+/admin/resource-activity/item/del:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+    interfaceAsserts:
+        -
+
+/admin/resource-activity/item/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+    interfaceAsserts:
+        -
+
+/admin/resource-activity/item/edit:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+          type:
+          sort:
+          imgUrl:
+          width:
+          height:
+          status:
+          jumpUrl:
+          startTimeStr:
+          endTimeStr:
+          remark:
+    interfaceAsserts:
+        -
+
+/admin/resource-activity/item/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          type:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/admin/resource-activity/item/update-status:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+          status:
+    interfaceAsserts:
+        -
+
+/admin/upload-log/last:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          type:
+    interfaceAsserts:
+        -
+
+/api/app/version/add:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          appId:
+          updateType:
+          downloadUrl:
+          appCode:
+          appName:
+          versionMilepost:
+          versionNum:
+          versionCode:
+          versionNumBefore:
+          versionBig:
+          updateTitle:
+          updateMessage:
+          status:
+    interfaceAsserts:
+        -
+
+/api/app/version/upload-app:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          file:
+    interfaceAsserts:
+        -
+
+/api/plant/is-exists:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+          name:
+    interfaceAsserts:
+        -
+
+/common/upload-activity:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          file:
+    interfaceAsserts:
+        -
+
+/config/common/get-city-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          pid:
+    interfaceAsserts:
+        -
+
+/config/common/get-service-phone:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/app/version/get:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          appId:
+    interfaceAsserts:
+        -
+
+/mobile/plant/detail:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          id:
+    interfaceAsserts:
+        -
+
+/mobile/plant/list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+          search:
+          pn:
+          ps:
+    interfaceAsserts:
+        -
+
+/mobile/resource-activity/item/ms-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+
+/mobile/resource-activity/item/supplier-list:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: {'Host':'www.super-ping.com','Connection':'keep-alive','Cache-Control':'max-age=0','Accept':'text/html,*/*;q=0.01','X-Requested-With':'XMLHttpRequest','User-Agent':'Mozilla/5.0(X11;Linuxx86_64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/41.0.2272.89Safari/537.36','DNT':'1','Referer':'http://www.super-ping.com/?ping=www.google.com&locale=sc','Accept-Encoding':'gzip,deflate,sdch','Accept-Language':'zh-CN,zh;q=0.8,ja;q=0.6'}
+        serverAddress: http://dev.ms.kbms.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-kbms
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -

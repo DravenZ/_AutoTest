@@ -1,0 +1,1015 @@
+# 用户登录
+/mobile/sso/sms-login:
+    #接口请求基础信息
+    baseInfo:
+        #接口作者，非必填
+        author: Draven
+        #接口用例编写时间，非必填
+        time: 20181220
+        #接口要去的打印日志级别，非必填，默认为debug
+        logInfo:
+        #是否执行接口测试，非必填，默认True
+        directExecution: True
+        #是否按接口请求和响应生成python文件，非必填，默认False
+        generatePython: True
+        #接口请求方式，必填信息，默认POST，需要支持GET
+        requestMethod: POST
+        #接口请求header,非必填，需要有默认值
+        requestHeaders:
+        #接口请求服务器地址，必填，需要支持https协议
+        serverAddress: http://dev.ms.passport.sjnc.com
+        #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+        dataBase:
+          host: 39.104.28.40
+          port: 3306
+          user: root
+          password: YYJNo$QsaaSjgb8U3JoigB
+          database: ""
+    #接口请求参数列表
+    interfaceParameters:
+        -
+            #FAKER 数据
+            RECORD(ms_mobile): 18380581400
+            mobile: READ(ms_mobile)
+            verifyCode: 8888
+            deviceType: 1
+              deviceId: Zhangpengfei
+            accountType: CUSTOMER
+            appId: MS_APP
+        -
+            RECORD(us_mobile): 18380581401
+            mobile: READ(us_mobile)
+            verifyCode: 8888
+            deviceType: 1
+            deviceId: Zhangpengfei
+            accountType: CUSTOMER
+            appId: MS_APP
+
+    #接口断言参数列表
+    interfaceAsserts:
+        -
+            RECORD(ms_token): READ(data_current.resp.content.token)
+            RECORD(ms_devices_id): READ(data_current.resp.content.deviceId)
+            READ(data_current.resp.status): OK
+            RECORD(product_name): [绿萝,玫瑰,薄荷,花椒,枸杞,月季,樱桃,多肉,剑兰,吊兰,蒜苗,花菜,土豆,茄子,胡萝卜,南瓜,冬瓜,西瓜,甜瓜,苦瓜,黄瓜,葫芦娃救爷爷,莲花]
+        -
+            RECORD(us_token): READ(data_current.resp.content.token)
+            RECORD(us_devices_id): READ(data_current.resp.content.deviceId)
+            READ(data_current.resp.status): OK
+
+# 用户查看苗叔认证状态
+/mobile/apply/channel-status:
+    #接口请求基础信息
+    baseInfo:
+        #接口作者，非必填
+        author: Draven
+        #接口用例编写时间，非必填
+        time: 20181221
+        #接口要去的打印日志级别，非必填，默认为debug
+        logInfo:
+        #是否执行接口测试，非必填，默认True
+        directExecution: True
+        #是否按接口请求和响应生成python文件，非必填，默认False
+        generatePython: True
+        #接口请求方式，必填信息，默认POST，需要支持GET
+        requestMethod: POST
+        #接口请求header,非必填，需要有默认值
+        requestHeaders:
+        #接口请求服务器地址，必填，需要支持https协议
+        serverAddress: http://dev.ms.user.sjnc.com
+        #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+        dataBase:
+          host: 39.104.28.40
+          port: 3306
+          user: root
+          password: YYJNo$QsaaSjgb8U3JoigB
+          database: ""
+    #接口请求参数列表
+    interfaceParameters:
+        -
+            _tk_: READ(ms_token)
+            _deviceId_: READ(ms_devices_id)
+    #接口断言参数列表
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+
+## 用户申请苗叔
+#/mobile/apply/channel:
+#    #接口请求基础信息
+#    baseInfo:
+#      #接口作者，非必填
+#      author: Draven
+#      #接口用例编写时间，非必填
+#      time: 20181221
+#      #接口要去的打印日志级别，非必填，默认为debug
+#      logInfo:
+#      #是否执行接口测试，非必填，默认True
+#      directExecution: True
+#      #是否按接口请求和响应生成python文件，非必填，默认False
+#      generatePython: True
+#      #接口请求方式，必填信息，默认POST，需要支持GET
+#      requestMethod: POST
+#      #接口请求header,非必填，需要有默认值
+#      requestHeaders:
+#      #接口请求服务器地址，必填，需要支持https协议
+#      serverAddress: http://dev.ms.user.sjnc.com
+#      #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+#      dataBase:
+#        host: 39.104.28.40
+#        port: 3306
+#        user: root
+#        password: YYJNo$QsaaSjgb8U3JoigB
+#        database: ""
+#    #接口请求参数列表
+#    interfaceParameters:
+#    -
+#      _tk_: READ(ms_token)
+#      _deviceId_: READ(ms_devices_id)
+#    #接口断言参数列表
+#    interfaceAsserts:
+#    - READ(data_current.resp.status): OK
+#
+## 后台登录
+#/admin/service/account-login:
+#    #接口请求基础信息
+#    baseInfo:
+#        #接口作者，非必填
+#        author: Draven
+#        #接口用例编写时间，非必填
+#        time: 20181221
+#        #接口要去的打印日志级别，非必填，默认为debug
+#        logInfo:
+#        #是否执行接口测试，非必填，默认True
+#        directExecution: True
+#        #是否按接口请求和响应生成python文件，非必填，默认False
+#        generatePython: True
+#        #接口请求方式，必填信息，默认POST，需要支持GET
+#        requestMethod: POST
+#        #接口请求header,非必填，需要有默认值
+#        requestHeaders:
+#        #接口请求服务器地址，必填，需要支持https协议
+#        serverAddress: http://dev.ms.passport.sjnc.com
+#        #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+#        dataBase:
+#          host: 39.104.28.40
+#          port: 3306
+#          user: root
+#          password: YYJNo$QsaaSjgb8U3JoigB
+#          database: ""
+#    #接口请求参数列表
+#    interfaceParameters:
+#        -
+#            #FAKER 数据
+#            account: 18328433208
+#            password: 123456
+#            deviceType: WEB
+#            deviceId: Zhangpengfei
+#            appId: MS_SYS
+#
+#            #留空请求
+#    #接口断言参数列表
+#    interfaceAsserts:
+#        -
+#            RECORD(emp_token): READ(data_current.resp.content.token)
+#            RECORD(emp_devices_id): READ(data_current.resp.content.deviceId)
+
+## 运营苗叔待审核列表
+#/admin/audit/list:
+#    #接口请求基础信息
+#    baseInfo:
+#      #接口作者，非必填
+#      author: Draven
+#      #接口用例编写时间，非必填
+#      time: 20181221
+#      #接口要去的打印日志级别，非必填，默认为debug
+#      logInfo:
+#      #是否执行接口测试，非必填，默认True
+#      directExecution: True
+#      #是否按接口请求和响应生成python文件，非必填，默认False
+#      generatePython: True
+#      #接口请求方式，必填信息，默认POST，需要支持GET
+#      requestMethod: POST
+#      #接口请求header,非必填，需要有默认值
+#      requestHeaders:
+#      #接口请求服务器地址，必填，需要支持https协议
+#      serverAddress: http://dev.ms.user.sjnc.com
+#      #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+#      dataBase:
+#        host: 39.104.28.40
+#        port: 3306
+#        user: root
+#        password: YYJNo$QsaaSjgb8U3JoigB
+#        database: ""
+#    #接口请求参数列表
+#    interfaceParameters:
+#    -
+#      _tk_: READ(emp_token)
+#      _deviceId_: READ(emp_devices_id)
+#      ps: 20
+#      pn: 1
+#      status: 2
+#      applyRole: 2
+#      mobile: READ(ms_mobile)
+#      nickname:
+#    #接口断言参数列表
+#    interfaceAsserts:
+#    -
+#      READ(data_current.resp.status): OK
+#      RECORD(audit_list_id): READ(data_current.resp.content.datas.0.id)
+#      RECORD(ms_user_id): READ(data_current.resp.content.datas.0.userId)
+
+## 运营审核通过苗叔
+#/admin/audit/pass:
+#    #接口请求基础信息
+#    baseInfo:
+#      #接口作者，非必填
+#      author: Draven
+#      #接口用例编写时间，非必填
+#      time: 20181221
+#      #接口要去的打印日志级别，非必填，默认为debug
+#      logInfo:
+#      #是否执行接口测试，非必填，默认True
+#      directExecution: True
+#      #是否按接口请求和响应生成python文件，非必填，默认False
+#      generatePython: True
+#      #接口请求方式，必填信息，默认POST，需要支持GET
+#      requestMethod: POST
+#      #接口请求header,非必填，需要有默认值
+#      requestHeaders:
+#      #接口请求服务器地址，必填，需要支持https协议
+#      serverAddress: http://dev.ms.user.sjnc.com
+#      #接口请求数据库地址，非必填，编写方式为mysql://登录名:密码@地址/数据库名
+#      dataBase:
+#        host: 39.104.28.40
+#        port: 3306
+#        user: root
+#        password: YYJNo$QsaaSjgb8U3JoigB
+#        database: ""
+#    #接口请求参数列表
+#    interfaceParameters:
+#    -
+#      _tk_: READ(emp_token)
+#      _deviceId_: READ(emp_devices_id)
+#      id: READ(audit_list_id)
+#      userId: READ(ms_user_id)
+#      positive: 'http://203.6.234.220:9660/download/attachments/1016059/user-avatar'
+#      negative: 'http://203.6.234.220:9660/download/attachments/1016059/user-avatar'
+#      name: 'Draven'
+#      gender: 1
+#      birthday: '2018-11-11'
+#      idNum: '513902199309091011'
+#      province: 41
+#      city: 4100
+#      district: 1101104
+#      address: '领馆科技'
+#    #接口断言参数列表
+#    interfaceAsserts:
+#    -
+#      READ(data_current.resp.status): OK
+
+# 获取用户基本信息
+/mobile/user/get-basic-info:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.user.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-user
+    interfaceParameters:
+        -
+            _tk_: READ(ms_token)
+            _deviceId_: READ(ms_devices_id)
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+            RECORD(ms_user_id): READ(data_current.resp.content.id)
+
+# 根据ms_user_id 获取shopinfo
+/mobile/shop/get-by-type:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.shop.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-shop
+    interfaceParameters:
+        -
+            sellerId: READ(ms_user_id)
+            type: 20
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+            RECORD(shop_id): READ(data_current.resp.content.shopId)
+
+# 添加收货地址
+/mobile/address/add:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.user.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-user
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          receiver: Draven
+          contactNumber: READ(ms_mobile)
+          province: 41
+          city: 4101
+          address: FAKER(address)
+          doorNumber: 8888号大院
+          lng: 104.069
+          lat: 30.539
+          isDefault: 1
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 获取收货地址列表
+/mobile/address/list:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.user.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-user
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(address_id): READ(data_current.resp.content.0.id)
+
+# 更新店铺信息
+/mobile/shop/update-shop-info:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.shop.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-shop
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          shopId: READ(shop_id)
+          sellerId: READ(ms_user_id)
+          name: FAKER(shop)
+          mobile: READ(ms_mobile)
+          contact: FAKER(name)
+          avatar: 'http://203.6.234.220:9660/download/attachments/1016059/user-avatar'
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          READ(data_current.resp.content): true
+
+# 根据条件查找分类列表
+/mobile/category/list:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.product.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-product
+    interfaceParameters:
+        -
+            categoryId: 0
+            search:
+        -
+            categoryId: READ(parent_category_list)
+            search:
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+            RECORD(parent_category_list): READ(data_current.resp.content.__iterations__.id)
+        -
+            READ(data_current.resp.status): OK
+            RECORD(child_category_list): READ(data_current.resp.content.__iterations__.id)
+
+# 查询单位列表
+/mobile/store-unit/list:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.product.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-product
+    interfaceParameters:
+        -
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+            RECORD(store_unit_list): READ(data_current.resp.content.__iterations__.id)
+
+# 新增运费模板
+/mobile/freightTemplate/save-or-update:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.shop.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-shop
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          shopId: READ(shop_id)
+          id:
+          title: FAKER(text)
+          freighPerKm: FAKER(decimal)
+          freePrice: FAKER(decimal)
+          freeDistance: FAKER(decimal)
+          freePriceStatus:
+          freeDistanceStatus:
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 查询运费模板列表
+/mobile/freightTemplate/all:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.shop.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-shop
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          shopId: READ(shop_id)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(freightTemplate_list): READ(data_current.resp.content.__iterations__.id)
+
+
+# 苗叔添加商品
+/mobile/product/save:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.product.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-product
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          parentId: FAKER(READ(parent_category_list))
+          categoryId: FAKER(READ(child_category_list))
+          name: FAKER(READ(product_name))
+          shopId: READ(shop_id)
+          price: FAKER(integer)
+          storeUnitId: FAKER(READ(store_unit_list))
+          content: FAKER(text)
+          store: FAKER(integer)
+          freightId: FAKER(READ(freightTemplate_list))
+          status: 10
+          serviceType: 20
+          imgs: 'http://203.6.234.220:9660/download/attachments/1016059/user-avatar'
+          infoImgs:
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 添加接单点
+/mobile/address/add!!!1:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.shop.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-shop
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          addressId:
+          shopId: READ(shop_id)
+          lng: 104.069
+          lat: 30.539
+          province: 41
+          city: 4101
+          area: 高新区
+          address: FAKER(address)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 修改店铺的营业状态
+/mobile/shop/switch-status:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.shop.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-shop
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          status: 10
+          check: True
+          shopId: READ(shop_id)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          READ(data_current.resp.content): true
+
+# 买家查询店铺商品列表
+/mobile/product/shop-products:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.product.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-product
+    interfaceParameters:
+        -
+          shopId: READ(shop_id)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(pro_code_list): READ(data_current.resp.content.1.productList.__iterations__.pcode)
+
+# 买家添加购物车
+/mobile/cart/add:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          pcode: FAKER(READ(pro_code_list))
+          amount: 1
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 买家查看购物车列表
+/mobile/cart/list:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          type: 10
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(cart_ids): READ(data_current.resp.content.shopItem.0.products.__iterations__.cartId)
+
+# 买家购物车结算
+/mobile/cart/balance:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.cart.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-cart
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          cartIds: READ(cart_ids)
+          addressId: READ(address_id)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(cart_ids): READ(data_current.resp.content.products.__iterations__.cartId)
+          RECORD(pcodes): READ(data_current.resp.content.products.__iterations__.pcode)
+          RECORD(amount): READ(data_current.resp.content.products.__iterations__.amount)
+          RECORD(imgs): READ(data_current.resp.content.products.__iterations__.imgs.0)
+
+
+# 买家确认订单
+/mobile/customer/order/submit-order:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          shopId: READ(shop_id)
+          sellerId: READ(ms_user_id)
+          buyerMemo: FAKER(text)
+          product:
+                cartId: READ(cart_ids)
+                pCode: READ(pcodes)
+                num: READ(amount)
+                image: READ(imgs)
+          addressId: READ(address_id)
+          freight: RESPONSE(content.deliveryPrice)
+          productPrice: RESPONSE(content.productTotalPrice)
+          isCheck: false
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(order_no): READ(data_current.resp.content.orderNo)
+          RECORD(trade_no): READ(data_current.resp.content.tradeNo)
+
+# 收银台
+/mobile/cashier/index:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          tradeNos: READ(trade_no)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+          RECORD(amount): READ(data_current.resp.content.amount)
+
+# 买家支付
+/mobile/weipay/pay:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          tradeNos: READ(trade_no)
+          channelId: RESPONSE(content.channelList.0.id)
+          channelAmount: READ(amount)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 支付回调
+/notify/test/2/notice:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: False
+        generatePython: False
+        requestMethod: POST
+        requestHeaders: { "Content-Type": "charset=UTF-8,*/*", "Accept": "application/json", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/68.0.3440.106 Safari/537.36" }
+        serverAddress: https://dev.ms.pay.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-pay
+    interfaceParameters:
+        -
+          xml
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 买家订单详情
+/mobile/customer/order/detail:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          orderNo: READ(order_no)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 苗叔查看订单详情
+/mobile/channel/order/detail:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+          _tk_: READ(ms_token)
+          _deviceId_: READ(ms_devices_id)
+          orderNo: READ(order_no)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 已付款订单申请取消
+/mobile/customer/order/apply-refund:
+    baseInfo:
+        author:
+        time: 20180931
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+          _tk_: READ(us_token)
+          _deviceId_: READ(us_devices_id)
+          orderNo: READ(order_no)
+    interfaceAsserts:
+        -
+          READ(data_current.resp.status): OK
+
+# 苗叔拒绝买家取消订单
+/mobile/channel/order/refuse:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+            _tk_: READ(ms_token)
+            _deviceId_: READ(ms_devices_id)
+            orderNo: READ(order_no)
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+
+# 苗叔完成配送
+/mobile/channel/order/finish-send:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+            _tk_: READ(ms_token)
+            _deviceId_: READ(ms_devices_id)
+            orderNo: READ(order_no)
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
+
+# 用户确认收货
+/mobile/customer/order/confirm-receive:
+    baseInfo:
+        author: zhangpengfei
+        time: 20181222
+        logInfo: Debug
+        directExecution: True
+        generatePython: False
+        requestMethod: POST
+        requestHeaders:
+        serverAddress: http://dev.ms.order.sjnc.com
+        dataBase:
+            host: 39.104.28.40
+            port: 3306
+            user: root
+            password: YYJNo$QsaaSjgb8U3JoigB
+            database: ms-order
+    interfaceParameters:
+        -
+            _tk_: READ(us_token)
+            _deviceId_: READ(us_devices_id)
+            orderNo: READ(order_no)
+    interfaceAsserts:
+        -
+            READ(data_current.resp.status): OK
